@@ -53,4 +53,21 @@ if texto1 == "Campus":
 else:
     print("No soy Campus")
 
+## ---- Funciones ----
+    
+# Con parámetros y con retorno
+def suma(a, b):  # def, nombre de la función, (parámetros)
+    resultado = a + b # Variable a retornar
+    return resultado  # return, nombre de la anterior variable
+
+print(suma(2, 2)) # print, (nombre de la función(parámetros))
+
+# Sin parámetros y sin retorno
+def mensaje(): # def, nombre de la función
+    print("Hola marcianos") # print, mensaje
+
+
+
+## ---- Arreglos ----    
+
 ## Desarrollado por OLIVER EDUARDO LOPEZ PEREZ - 1097911715
