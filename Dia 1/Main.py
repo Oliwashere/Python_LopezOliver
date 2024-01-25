@@ -64,10 +64,27 @@ print(suma(2, 2)) # print, (nombre de la función(parámetros))
 
 # Sin parámetros y sin retorno
 def mensaje(): # def, nombre de la función
-    print("Hola marcianos") # print, mensaje
+    print("Hola marcianos") # print, (mensaje a enseñar en pantalla)
 
+mensaje() # print, (nombre de la función)
 
+# Sin parámetros y con retorno
+def suma2(): # def, nombre de la función
+    resultado2 = 2 + 2 # variable a retornar
+    return resultado2  # return, nombre de la anterior variable
+
+print(suma2()) # (print, nombre de la función)
+
+# Con parámetros y sin retorno
+def suma3(a, b):
+    resultado3 = a + b
+    print(resultado3)
+
+suma3(2, 2)
 
 ## ---- Arreglos ----    
+
+array = [1, 2, 3, 4]
+print(array)
 
 ## Desarrollado por OLIVER EDUARDO LOPEZ PEREZ - 1097911715
