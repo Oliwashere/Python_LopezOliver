@@ -25,12 +25,12 @@ while True: # while, variable "True"
         n = int(input("Ingrese el valor limitante: ")) # variable "n" se le es asignado el valor ingresado por el usuario
         print()
         if n < 0: # if variable "n" es menor a cero entonces
-            print("Error: El valor limitante debe ser positivo") # mostrar mensaje de error
+            print("Error: El valor limitante debe ser positivo, por favor procura ingresar un número positivo entero") # mostrar mensaje de error
             print()
         else:
             break # break para parar el bucle
     except ValueError: # excepción de break si la variable "n" ingresada no es un número entero
-        print("Error: El valor limitante debe ser un número entero") # mostrar mensaje de error
+        print("Error: El valor limitante debe ser un número entero, por favor procura ingresar un número positivo entero") # mostrar mensaje de error
         print()
 
 while n != 0: # while variable "n" no sea igual a 0
@@ -42,12 +42,12 @@ while n != 0: # while variable "n" no sea igual a 0
             n = int(input("Ingrese un nuevo valor limitante o ingrese 0 para finalizar el programa: ")) # a la variable "n" se le es asignado el valor ingresado por el usuario (si es cero terminará el programa)
             print()
             if n < 0: # if variable "n" es menor que cero entonces
-                print("Error: El valor limitante debe ser positivo") # mostrar mensaje de error
+                print("Error: El valor limitante debe ser positivo, por favor procura ingresar un número positivo entero") # mostrar mensaje de error
                 print()
             else:
                 break # break para parar el bucle
         except ValueError: # excepción de break si la variable "n" ingresada es un caracter y no es un número entero
-            print("Error: El valor limitante debe ser un número entero")
+            print("Error: El valor limitante debe ser un número entero, por favor procura ingresar un número positivo entero")
             print()
 
 print("El programa ha terminado") # al ingresar cero soltará el anterior mensaje
