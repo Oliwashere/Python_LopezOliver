@@ -4,25 +4,40 @@
 
 # ---- Juego de adivinanza ----
 
-def juego_adivinanza():
-    numero_secreto = random.randint(1, 100)
-    intentos = 0
+import random # Función del sistema para generar números aleatorios
 
-    print("Bienvenido al juego de adivinanza. Adivina el número secreto entre 1 y 100.")
+def main(): # función main
+    print("En este programa jugarás a adivinar un número que se encuentra entre 1 y 100 en tan solo 10 intentos")
+    print()
+    print("Cada que ingreses un número se indicará si es mayor o menor que el número aleatorio seleccionado")
+    print()
+    print("¡Buena suerte!")
+    print()
 
-    while True:
-        try:
-            suposicion = int(input("Introduce tu suposición: "))
+    num = random.randint(1, 100) #  La función random.randint devuelve un número entero aleatorio en el intervalo cerrado
+    intentos = 10 # a la variable "intentos" se le asigna 10
+
+    while intentos > 0: # while variable "intentos" sea menor a cero entonces
+        try: # hacer
+            adivin = int(input("Ingresa el número que crees que se eligió (de 1 a 100): ")) # 
+            if adivin < 1 or adivin > 100:
+                print("Lo siento, debes ingresar un número entre 1 y 100.")
+                continue
         except ValueError:
-            print("Por favor, introduce un número válido.")
+            print("Lo siento, debes ingresar un número válido.")
             continue
 
-        intentos += 1
+        intentos -= 1
 
-        if suposicion == numero_secreto:
-            print(f"¡Felicidades! Has adivinado el número secreto {numero_secreto} en {intentos} intentos.")
-            break
-        elif suposicion < numero_secreto:
-            print("El número secreto es mayor. Intenta de nuevo.")
+        if adivin < num:
+            print(adivin,"Es menor que el número. Intenta de nuevo.")
+        elif adivin > num:
+            print(adivin,"Es mayor que el número. Intenta de nuevo.")
         else:
-            print("El número secreto es menor. Intenta de nuevo.")
+            print(f"¡Felicidades! ¡Has adivinado el número en {11 - intentos} intentos.")
+            return
+
+    print(f"Lo siento, has agotado tus intentos. El número era {num}.")
+
+if __name__ == "__main__":
+    main()
