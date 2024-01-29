@@ -41,3 +41,9 @@ def main(): # función main
 
 if __name__ == "__main__": #if usado para lanzar la función "main" completa anteriormente definida
     main()
+
+
+if __name__ == "__main__": #if usado para lanzar la función "main" completa anteriormente definida
+    main()
+
+## Desarrollado por OLIVER EDUARDO LOPEZ PEREZ - 1097911715
