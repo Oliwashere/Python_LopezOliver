@@ -5,15 +5,15 @@
 # ---- Bugfix ----
 
 ## Código a Bugfix:
-#def negate(num):
+# def negate(num):
 #    return -num
 #
-#def large_num(num):
+# def large_num(num):
 #    res = (num > 10000)
 
-#negate(1)
-#neg_b = num
-#print "b is big:", big
+# negate(1)
+# neg_b = num
+# print "b is big:", big
 
 ## Bug 1:
 
@@ -30,6 +30,7 @@
 #
 # if num > 10000:
 #    print("El número",num,"es mayor a 10000")
+#    return True
 #
 
 ## Bug 3:
@@ -51,13 +52,12 @@ def negate(num):
 def large_num(num):
     if num > 10000:
         print("El número",num,"es mayor a mil")
+        return True
     else:
-        print()
+        return False
+    
 
-print(large_num(100000))
+print(large_num(100))
 print(negate(1000000))
-
-
-
 
 ## Desarrollado por OLIVER EDUARDO LOPEZ PEREZ - 1097911715
