@@ -4,22 +4,19 @@
 
 # ---- Data structures ----
 
-## Mutable
+#### --Mutable--
+## Modificable después de su creación
 
-# Lists
+## Lists
 # Colección ordenada y modificable
 
-## Inmutable
+#### --Inmutable--
+# Imposible de cambiar después creada
 
-# Strings
+## Strings
 # Seuencia inmutable de caracteres
 
-# Tuples
+## Tuples
 # Colección ordenada e inmutable
-
-## Partially mutable
-
-# Dictionaries
-# Estructura de datos clave-valor
 
 ## Desarrollado por OLIVER EDUARDO LOPEZ PEREZ - 1097911715
