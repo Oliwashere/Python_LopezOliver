@@ -1,5 +1,6 @@
 import json
 
+
 def read_clientes(data):
 
     clientes = data["ventas"]["clientes"]
@@ -25,3 +26,7 @@ with open("data.json", "r") as file:
     data = json.load(file)
 
 listado_clientes = read_clientes(data)
+
+jsonFinal= json.dumps("data.json")
+
+
