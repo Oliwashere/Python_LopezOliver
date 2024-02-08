@@ -4,13 +4,11 @@ def read_clientes(data):
 
     clientes = data["ventas"]["clientes"]
 
-    
     print("")
     print("************")
     print("* CLIENTES * ------------------")
     print("************")
     print("")
-
 
     for cliente in clientes:
         print(f"ID Cliente: {cliente['id']}")

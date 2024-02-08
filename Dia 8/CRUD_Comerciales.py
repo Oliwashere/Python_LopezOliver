@@ -10,7 +10,6 @@ def read_comerciales(data):
     print("***************")
     print("")
 
-
     for comercial in comerciales:
         print(f"ID Comercial: {comercial['id']}")
         print(f"Nombre: {comercial['nombre']}")

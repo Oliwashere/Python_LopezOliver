@@ -10,7 +10,6 @@ def read_pedidos(data):
     print("***********")
     print("")
 
-
     for pedido in pedidos:
         print(f"ID Pedido: {pedido['id']}")
         print(f"Total: ${pedido['total']:.2f}")
