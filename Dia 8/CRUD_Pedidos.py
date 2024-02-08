@@ -24,6 +24,3 @@ with open("data.json", "r") as file:
     data = json.load(file)
 
 listado_pedidos = read_pedidos(data)
-
-#######################################
-
